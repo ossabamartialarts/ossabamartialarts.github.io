@@ -687,21 +687,6 @@ Hero Modules
 /***************************
 Logo Modules
 ***************************/
-/*
-.logo {
-
-    overflow: hidden;
-
-    img {
-
-        height: 100px;
-
-        @include small-and-above {
-            height: 100%;
-        }
-    }
-}
-*/
 .logo {
   overflow: hidden;
   display: inline-block; }
@@ -999,6 +984,105 @@ Prices
 
 .promo {
   box-shadow: 0px 0px 4px blue; }
+
+.blog-header {
+  text-align: left; }
+
+.blog-logo {
+  overflow: hidden;
+  display: inline-block; }
+
+.blog-logo-primary {
+  width: 100px;
+  height: 100px; }
+  .blog-logo-primary img {
+    height: 100%; }
+  @media only screen and (min-width: 48em) {
+    .blog-logo-primary {
+      width: 50%;
+      float: left;
+      clear: right; }
+      .blog-logo-primary img {
+        width: 100%; } }
+
+.blog-nav {
+  text-align: center; }
+  @media only screen and (min-width: 48em) {
+    .blog-nav {
+      text-align: right;
+      float: right;
+      width: 50%;
+      margin-top: 28px; } }
+
+.blog-btn-mobile {
+  float: right;
+  margin-top: 35px; }
+
+.post {
+  box-shadow: 0px 0px 2px black;
+  margin: 20px 10px;
+  padding: 10px;
+  border-radius: 10px; }
+
+.post-image img {
+  width: 100%; }
+
+.post-title {
+  cursor: pointer; }
+
+.date {
+  color: grey; }
+
+.main-image img {
+  width: 100%; }
+
+@media only screen and (min-width: 48em) {
+  .main-image {
+    height: 400px;
+    text-align: center; }
+    .main-image img {
+      width: auto;
+      height: 100%; } }
+
+.title {
+  font-size: 3.5em; }
+
+.subtitle {
+  font-size: 2.25em; }
+
+.post-text {
+  font-size: 1.25em; }
+
+.media-image {
+  width: 100%;
+  text-align: center;
+  font-size: 0.85em; }
+  .media-image img {
+    width: 100%; }
+  @media only screen and (min-width: 48em) {
+    .media-image img {
+      width: 60%; } }
+
+.references {
+  font-size: 1.25em; }
+
+.slide-right {
+  transform: translateX(-350px);
+  animation: slide-right 2s forwards;
+  -webkit-animation: slide-right 2s forwards;
+  -moz-animation: slide-right 2s forwards; }
+
+@keyframes slide-right {
+  to {
+    transform: translateX(0); } }
+
+@-webkit-keyframes slide-right {
+  to {
+    transform: translateX(0); } }
+
+@-moz-keyframes slide-right {
+  to {
+    transform: translateX(0); } }
 
 /***************************
 Theme Imports

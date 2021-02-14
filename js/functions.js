@@ -48,9 +48,20 @@ $(document).on('click', '.btn-mobile', function() {
 //Deslizar a la derecha
 $(window).scroll(function (event) {
 
-    $(".animate").each(function (i, element) {
+    $(".animate-right").each(function (i, element) {
         if ($(element).visible(true)) {
             $(element).addClass("slide-right");
+        }
+    });
+
+});
+
+//Deslizar a la izquierda
+$(window).scroll(function (event) {
+
+    $(".animate-left").each(function (i, element) {
+        if ($(element).visible(true)) {
+            $(element).addClass("slide-left");
         }
     });
 

@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ossabamartialarts.github.io/sitemap.xml

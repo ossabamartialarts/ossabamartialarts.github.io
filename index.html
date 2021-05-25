@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-
-    <!-- Head -->
     <head>
-
+    
         <!-- Title -->
         <title>Ossaba Martial Arts MMA | Artes Marciales Medellin</title>
         <link rel="icon" href="images/logo1.png">
-
+    
         <!-- Meta -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,6 +26,7 @@
             gtag('config', 'G-9HLE7YGS9W');
         </script>
 
+
         <!-- Styles and Scripts -->
         <link rel="stylesheet" href="css/styles.css" type="text/css">
         <script src="https://kit.fontawesome.com/77df107571.js" crossorigin="anonymous"></script>
@@ -39,80 +38,134 @@
             document.createElement("picture");
         </script>
         <script src="js/picturefill.js" async></script>
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
     </head>
-
-    <!-- Body -->
-
     <body>
 
-        <!-- Header -->
-        <header class="header-primary">
-            <div class="container">
-                <!-- Logo -->
-                <a class="logo logo-primary" href="#">
-                    <picture>
-                        <!--[if IE 9]><video style="display: none;"><![endif]-->
-                        <source type="image/svg+xml" srcset="images/logo.svg" aria-label="Logo Ossaba Martial Arts">
-                        <!--[if IE 9]></video><![endif]-->
-                        <img src="images/logo.png" alt="Ossaba Martial Arts">
-                    </picture>
-                </a>
-                <!-- Slogan -->
-                <h3>¡Abre tu mente, mantente en movimiento!</h3>
-                <!-- Navigation Menu -->
-                <button class="btn-mobile"><i class="fas fa-bars" aria-label="Menu desplegable"></i></button>
-                <nav class="nav nav-primary">
-                    <ul>
-                        <li><a class="btn btn-nav current" href="#">Inicio</a></li>
-                        <li><a class="btn btn-nav" href="academia.html">Academia</a></li>
-                        <li><a class="btn btn-nav" href="horarios.html">Horarios</a></li>
-                        <li><a class="btn btn-nav" href="contacto.html">Contacto</a></li>
-                        <li><a class="btn btn-nav" href="blog/blog.html">Blog</a></li>
-                    </ul>
-                </nav>
-                <div class="line"></div>
-            </div>
-
-
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/Logo-blanco.png" style="height: 40px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav ms-auto">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link" href="academia.html">Academia</a>
+                        <a class="nav-link" href="horarios.html">Horarios</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </div>
+                    </div>
+                </div>
+            </nav>
         </header>
 
-        <!-- Main -->
         <main>
 
-            <!-- Academy description-->
-            <!-- <div class="container">
-                <section class="row description">
-                    <p>
+            <!-- Hero -->
+            <section class="hero container-fluid">
+                <div class="d-flex flex-column text-center justify-content-center align-items-center scale-in-fade-in" style="width: 100%;">
+                    <div class="logo-container mb-2 mt-auto">
+                        <picture>
+                            <!--[if IE 9]><video style="display: none;"><![endif]-->
+                            <source type="image/svg+xml" srcset="images/logo.svg" aria-label="Logo Ossaba Martial Arts">
+                            <!--[if IE 9]></video><![endif]-->
+                            <img src="images/logo.png" alt="Ossaba Martial Arts">
+                        </picture>
+                    </div>
+                    <h4>¡Libera tu potencial!</h4>
+                    <a href="#clases" class="scroll-down aling-self-end mt-auto mb-4"><i class="fas fa-chevron-down"></i></a>
+                </div>
+            </section>
 
-                    </p>
-                </section>
-            </div> -->
+            <!-- Clases -->
+            <section class="container pt-4 pb-4" id="clases">
+                <h1 class="text-center mb-4">Entrena Diferentes Artes Marciales</h1>
+                <div class="d-flex row">
+                    <div class="col-md-4 d-flex align-items-stretch mb-2">
+                        <div class="card text-center">
+                            <img src="images/jiujitsu.jpg" class="card-img-top" alt="Entrenamiento de Jiu Jitsu">
+                            <div class="card-body">
+                                <h5 class="card-title">Jiu Jitsu</h5>
+                                <a href="#" class="btn btn-primary">Leer mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch mb-2">
+                        <div class="card text-center">
+                            <img src="images/mma.jpg" class="card-img-top" alt="Entrenamiento de Artes Marciales Mixtas (MMA)">
+                            <div class="card-body">
+                                <h5 class="card-title">Artes Marciales Mixtas - MMA</h5>
+                                <a href="#" class="btn btn-primary">Leer mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch mb-2">
+                        <div class="card text-center">
+                            <img src="images/boxeo.jpg" class="card-img-top" alt="Entrenamiento de Boxeo">
+                            <div class="card-body">
+                                <h5 class="card-title">Boxeo & Kick Boxing</h5>
+                                <a href="#" class="btn btn-primary">Leer mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Clases 2 -->
+                <div class="row d-flex mt-4">   
+                    <div class="col-md-4 d-flex align-items-stretch mb-2">
+                        <div class="card text-center">
+                            <img src="images/jkd.jpg" class="card-img-top" alt="Entrenamiento de Jeet Kune Do">
+                            <div class="card-body">
+                                <h5 class="card-title">Jeet Kune Do</h5>
+                                <a href="#" class="btn btn-primary">Leer mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch mb-2">
+                        <div class="card text-center">
+                            <img src="images/defensapersonal.jpg" class="card-img-top" alt="Entrenamiento de Defensa Personal">
+                            <div class="card-body">
+                                <h5 class="card-title">Defensa Personal</h5>
+                                <a href="#" class="btn btn-primary">Leer mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch mb-2">
+                        <div class="card text-center">
+                            <img src="images/subgrappling.jpg" class="card-img-top" alt="Entrenamiento de Submission Grappling">
+                            <div class="card-body">
+                                <h5 class="card-title">Submission Grappling</h5>
+                                <a href="#" class="btn btn-primary">Leer mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <!-- Informacion -->
-            <div class="container media media-primary">
-                <!-- Beneficios de las artes marciales -->
-                <h1>¡Lleva cuerpo y mente a otro nivel!</h1>
-                <p>
-                    Crece en cuerpo, mente y espiritu. Abre tu mente y supera tus limites aprovechando los multiples
-                    beneficios de practicar artes marciales.
-                </p>
-                <section class="row flexbox-sm animate-right">
-                    <div class="col-1-3">
-                        <div class="frame-secondary no-border price">
-                            <div class="frame icon-circle-frame">
+            <!-- Beneficios -->
+            <section class="bg-dark pt-4 pb-4">
+                <div class="container">
+                    <h1 class="text-center font-white mb-4">¡LLeva Cuerpo y Mente a Otro Nivel!</h1>
+                    <div class="row">
+                        <div class="col-md-4 text-center font-white">
+                            <div class="frame icon-circle-frame mb-2">
                                 <img src="images/icono_crecimiento.png" alt="Icono crecimiento">
                             </div>
-                            <h2>Crecimiento personal</h2>
+                            <h2>Crecimiento Personal</h2>
                             <p>
                                 Supera tus limites tanto mentales como fisicos, cultiva valores como la disciplina, el respeto, la perseverancia
                                 y muchos mas. En Ossaba Martial Arts nos enfocamos en generar la mejor experiencia para que nuestros alumnos
                                 puedan superar sus limites.
                             </p>
                         </div>
-                    </div>
-                    <div class="col-1-3">
-                        <div class="frame-secondary no-border price">
-                            <div class="frame icon-circle-frame">
+                        <div class="col-md-4 text-center font-white">
+                            <div class="frame icon-circle-frame mb-2">
                                 <img src="images/icono_salud.png" alt="Icono salud">
                             </div>
                             <h2>Salud</h2>
@@ -122,13 +175,11 @@
                                 y entrena de manera integral.
                             </p>
                         </div>
-                    </div>
-                    <div class="col-1-3">
-                        <div class="frame-secondary no-border price">
-                            <div class="frame icon-circle-frame">
+                        <div class="col-md-4 text-center font-white">
+                            <div class="frame icon-circle-frame mb-2">
                                 <img src="images/icono_meditacion.png" alt="Icono equilibrio mental">
                             </div>
-                            <h2>Equilibrio mental</h2>
+                            <h2>Equilibrio Mental</h2>
                             <p>
                                 Libera el estres y la tension del dia a dia, mejora tu estado de animo y aprende a controlar tus emociones.
                                 Cultiva habitos de vida saludabes y equilibrados, aprendiendo a manejar tus emociones permitiendote llevar 
@@ -136,93 +187,109 @@
                             </p>
                         </div>
                     </div>
-                </section>
-
-                <!-- Clases disponibles -->
-                <h1>¡Escoge entre multiples disciplinas!</h1>
-                <p>
-                    Con Ossaba Martial Arts perfecciona y complementa tus habilidades practicando diferentes artes marciales.
-                </p>
-                <section class="row flexbox-sm animate-left">
-                    <div class="col-1-3 price-container">
-                        <div class="frame-secondary price">
-                            <div class="frame frame-img">
-                                <img src="images/icono_boxeo.png" alt="Icono boxeo">
-                            </div>
-                            <h2>Boxeo y Kickboxing</h2>
-                            <a class="btn-secondary" href="academia.html#box">Leer mas &#8594</a>
-                        </div>
-                    </div>
-                    <div class="col-1-3 price-container">
-                        <div class="frame-secondary price">
-                            <div class="frame frame-img">
-                                <img src="images/icono_jkd.png" alt="Icono jiu jitsu">
-                            </div>
-                            <h2>Jeet Kune Do</h2>
-                            <a class="btn-secondary" href="academia.html#jkd">Leer mas &#8594</a>
-                        </div>
-                    </div>
-                    <div class="col-1-3 price-container">
-                        <div class="frame-secondary price">
-                            <div class="frame frame-img">
-                                <img src="images/icono_defensa.png" alt="Icono defensa personal">
-                            </div>
-                            <h2>Defensa Personal</h2>
-                            <a class="btn-secondary" href="academia.html#defense">Leer mas &#8594</a>
-                        </div>
-                    </div>
-                </section>
-                <div style="margin-bottom: 40px;">
-                    <p style="font-size: 1.25em;">
-                        <strong>Nota:</strong> Debido a la pandemia del Covid-19 solo estamos ofreciendo estas clases por el momento, en los
-                        proximos meses esperamos retomar con Jiu Jitsu y Artes Marciales Mixtas.
-                    </p>
                 </div>
+            </section>
 
-                <section class="row flexbox-sm">
-                    <div class="col-1-2 price-container">
-                        <i class="far fa-calendar-alt fa-7x" aria-label="Simbolo calendario"></i>
-                        <br>
-                        <a class="btn-tertiary" href="horarios.html">¡Click aqui para consultar nuestros horarios!</a>
+            <!-- Preguntas Frecuentes -->
+            <section class="container pt-4 pb-4">
+                <h1 class="text-center mb-4">Preguntas Frecuentes</h1>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                ¿Necesito experiencia para comenzar a entrenar?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                1
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-1-2 price-container">
-                        <i class="fas fa-phone fa-7x" aria-label="Simbolo telefono"></i>
-                        <br>
-                        <a class="btn-tertiary" href="contacto.html">¡Click aqui para pregunta por tu clase de prueba!</a>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Hay clases de cortesia?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                2
+                            </div>
+                        </div>
                     </div>
-                </section>
-            </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Que necesito llevar a mi primera clase?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contacto rapido -->
+            <section class="container pt-4 pb-4">
+                <h1 class="text-center mb-4">Conoce nuestros planes y horarios</h1>
+                <div class="row text-center">
+                    <div class="col-md-6 mb-4">
+                        <i class="fas fa-comment-dollar fa-7x mb-2"></i>
+                        <br>
+                        <a href="" class="btn btn-lg btn-primary">Planes</a>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <i class="far fa-calendar-alt fa-7x mb-2"></i>
+                        <br>
+                        <a href="" class="btn btn-lg btn-primary">Horarios</a>
+                    </div>
+                </div>
+                <h2 class="text-center mt-4 mb-4">Contactanos para mas detalles</h2>
+                <div class="row text-center">
+                    <div class="align-items-center">
+                        <a href="" class="btn btn-lg btn-success">
+                            <i class="fab fa-whatsapp wpp" aria-label="Simbolo whatsapp"></i>
+                            ¡Escribenos!
+                        </a>
+                    </div>
+                </div>
+            </section>
 
         </main>
 
-        <!-- Footer -->
-        <footer class="footer-primary">
-            <div class="container">
-                <div class="line"></div>
-                <section class="row">
-                    <!-- Contact Info -->
-                    <div class="col-1-2 contact-info">
-                        <h3>Ossaba Martial Arts</h3>
-                        <address><a href="https://goo.gl/maps/fzaEjYUPsSe3oXav9" target="_blank"><i class="fas fa-map-marked-alt map-green" aria-label="Simbolo mapa">
+        <footer class="footer container-fluid bg-dark">
+            <section class="row pt-4">
+                <div class="col-md-8">
+                    <h3>Ossaba Martial Arts</h3>
+                    <address><a href="https://goo.gl/maps/fzaEjYUPsSe3oXav9" target="_blank"><i class="fas fa-map-marked-alt map-green">
                             </i>Carrera 24 #16AA Sur 85 - Medellin, Colombia</a></address>
-                        <a href="tel: +57 318 4020136"><i class="fab fa-whatsapp wpp" aria-label="Simbolo whatsapp"></i>+57 318 4020136</a>
-                    </div>
-                    <!-- Social Media -->
-                    <div class="col-1-2 social-media">
-                        <a href="https://www.instagram.com/ossabamma/" target="_blank"><i
-                                class="fab fa-instagram-square" aria-label="Simbolo instagram"></i></a>
-                        <a href="https://www.facebook.com/pages/category/Martial-Arts-School/Ossaba-Martial-Arts-109426434086674/"
-                            target="_blank"><i class="fab fa-facebook-square" aria-label="Simbolo facebook"></i></a>
-                        <a href="https://www.youtube.com/channel/UC9BTtRK34SyqR4QorOeMRXw" target="_blank"><i
-                                class="fab fa-youtube" aria-label="Simbolo youtube"></i></a>
-                    </div>
-                </section>
-                <div class="line"></div>
-                <section>
-                    <p style="text-align: center;">Copyright &copy; 2021 Ossaba Marial Arts - Made in Colombia</p>
-                </section>
-            </div>
-
+                    <a href="tel: +57 318 4020136"><i class="fab fa-whatsapp wpp" aria-label="Simbolo whatsapp"></i>+57 318 4020136</a>
+                </div>
+                <div class="col-md-4 media">
+                    <a href="https://www.instagram.com/ossabamma/" target="_blank"><i><img src="images/instagram.png" class="instagram"></i></a>
+                    <a href="https://www.facebook.com/pages/category/Martial-Arts-School/Ossaba-Martial-Arts-109426434086674/"
+                        target="_blank"><i><img src="images/facebook.png" class="facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UC9BTtRK34SyqR4QorOeMRXw" target="_blank"><i><img src="images/youtube.png" class="youtube"></i></i></a>
+                </div>
+            </section>
+            <hr>
+            <section class="row text-center">
+                <p>Copyright &copy; 2021 Ossaba Marial Arts - Made in Colombia</p>
+            </section>
         </footer>
+
+        <!-- Bootstrp JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
     </body>
 </html>

@@ -503,15 +503,17 @@ Module Imports
 
 .hero {
   background: linear-gradient(to right, rgba(238, 242, 243, 0.5), rgba(142, 158, 171, 0.5)), url(../images/hero.jpg);
-  height: 90vh;
+  height: 80vh;
   display: flex;
   background-size: cover;
   background-position: center; }
   .hero img {
     height: 180px; }
   @media only screen and (min-width: 768px) {
-    .hero img {
-      height: 200px; } }
+    .hero {
+      height: 90vh; }
+      .hero img {
+        height: 200px; } }
 
 .logo-container {
   overflow: hidden;
